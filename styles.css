@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#pinContainer {
+  width: 100%;
+  height: 100vh; /* Use 100vh to make it 100% of the viewport height */
+  overflow: hidden;
+}
+.panel {
+  height: 100vh; /* Use 100vh to make it 100% of the viewport height */
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+.panel .additionalContent {
+  top: 100%;
+  position: absolute;
+}
+.blue {
+  background-color: #3883d8;
+}
+.turqoise {
+  background-color: #38ced7;
+}
+.green {
+  background-color: #22d659;
+}
+.bordeaux {
+  background-color: #953543;
+}
+.pink {
+  background-color: pink;
+}
+.aqua {
+  background-color: aquamarine;
+}
+.brown {
+  background-color: brown;
+}
+.bisque {
+  background-color: bisque;
+}
+.cadetblue {
+  background-color: cadetblue;
+}
+
+.panel > b {
+  font-size: 15px;
+  color: white;
+  position: relative;
+  display: block;
+  height: 0;
+  overflow: visible;
+  top: 50%;
+}
