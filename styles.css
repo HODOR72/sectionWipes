@@ -11,7 +11,7 @@
   }
 
   img {
-    height: max-content;
+    height: max-content !important;
   }
 }
 
