@@ -60,12 +60,30 @@ var wipeAnimation = new TimelineMax()
     { x: "0%", ease: Linear.easeInOut }
   );
 
-// create scene to pin and link animation
 new ScrollMagic.Scene({
   triggerElement: "#pinContainer",
-  triggerHook: "onLeave",
+  triggerHook: 0,
   duration: "400%",
 })
   .setPin("#pinContainer")
   .setTween(wipeAnimation)
   .addTo(controller);
+
+// // Инициализация ScrollMagic
+// var controller = new ScrollMagic.Controller();
+
+// // Получаем все блоки контента
+// var contentBlocks = document.querySelectorAll(".panel");
+
+// // Проходимся по каждому блоку контента
+// contentBlocks.forEach(function (block) {
+//   // Создаем сцену ScrollMagic для каждого блока
+//   new ScrollMagic.Scene({
+//     triggerElement: "#pinContainer",
+//     triggerHook: "onLeave", // Начинать анимацию, когда верхняя граница блока достигнута верха окна
+//     duration: block.offsetHeight, // Длительность анимации - высота блока
+//   })
+//     .setPin("#pinContainer") // Фиксируем блок во время анимации
+//     .setTween(wipeAnimation)
+//     .addTo(controller);
+// });

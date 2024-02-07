@@ -28,6 +28,8 @@ body {
   width: 100vw;
   position: absolute;
   text-align: center;
+
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .panel .additionalContent {
   top: 100%;
