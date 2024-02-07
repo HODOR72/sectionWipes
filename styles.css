@@ -9,6 +9,10 @@
   p {
     width: 90%;
   }
+
+  img {
+    height: max-content;
+  }
 }
 
 html,
