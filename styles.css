@@ -110,6 +110,10 @@ body {
   line-height: 38px;
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 .row {
   display: flex;
   align-items: center;
