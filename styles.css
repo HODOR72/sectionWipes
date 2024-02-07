@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
   text-align: left;
+
+  p {
+    width: 90%;
+  }
 }
 
 html,
@@ -18,6 +22,7 @@ body {
   overflow: hidden;
 }
 .panel {
+  scroll-snap-align: center;
   padding: 32px 20px;
   height: 100vh; /* Use 100vh to make it 100% of the viewport height */
   width: 100vw;
@@ -94,6 +99,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 24px;
+  width: 90%;
 }
 
 .percent {
@@ -157,6 +163,7 @@ body {
 .bold-text {
   font-size: 18px;
   font-weight: 600;
+  width: 90%;
 }
 
 .payments {
@@ -308,6 +315,8 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 6px;
+
+  text-align: center;
 }
 
 .end {
@@ -322,4 +331,39 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .bold {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .phone-screen {
+    width: 100px;
+    height: max-content;
+  }
+
+  .sphere-screen {
+    width: 60px;
+    height: max-content;
+  }
+
+  .task-screen {
+    width: 77px;
+    height: max-content;
+  }
+
+  .enhance {
+    p {
+      width: 76%;
+    }
+  }
 }
