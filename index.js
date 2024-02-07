@@ -1,4 +1,3 @@
-// init
 var controller = new ScrollMagic.Controller();
 
 // define movement of panels
@@ -70,3 +69,10 @@ var scene = new ScrollMagic.Scene({
   .setPin("#pinContainer")
   .setTween(wipeAnimation)
   .addTo(controller);
+
+const tg = window.Telegram?.WebApp;
+if (tg) {
+  tg.ready();
+  tg.expand();
+  tg.enableConfimration();
+}

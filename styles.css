@@ -352,7 +352,7 @@ body {
   }
 
   .phone-screen {
-    width: 100px;
+    width: 75px;
     height: max-content;
   }
 
@@ -370,5 +370,30 @@ body {
     p {
       width: 76%;
     }
+  }
+
+  .bold {
+    font-size: 16px;
+  }
+
+  .column {
+    gap: 8px;
+  }
+
+  .center {
+    font-size: 14px;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .mb-16 {
+    margin-bottom: 10px;
+  }
+
+  .check {
+    width: 18px;
+    height: 18px;
   }
 }
