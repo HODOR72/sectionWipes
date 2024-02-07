@@ -68,5 +68,4 @@ new ScrollMagic.Scene({
 })
   .setPin("#pinContainer")
   .setTween(wipeAnimation)
-  .addIndicators()
   .addTo(controller);
