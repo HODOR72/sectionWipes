@@ -289,6 +289,12 @@ body {
 	min-height: 140px;
 	width: 90px;
 }
+.task-screen-wrapper .task-screen {
+	max-height: 180px;
+	width: 100%;
+	min-width: 80px;
+	object-fit: contain;
+}
 .task-screen {
 	width: 100%;
 	height: 100%;
