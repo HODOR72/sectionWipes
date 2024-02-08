@@ -97,6 +97,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	padding-right: 1vh;
 }
 
 .bold {
@@ -145,7 +146,7 @@ body {
 
 	p {
 		text-align: left;
-		padding: 0 20px 0 0;
+		padding: 0 15px 0 0;
 	}
 }
 
@@ -238,12 +239,12 @@ body {
 	margin-top: calc(1px + 1fr);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 3px;
+	gap: 1px;
 }
 
 .sphere-card {
 	background: #f5f5f6;
-	padding: 15px 10px 12px 10px;
+	padding: 15px 5px 12px 5px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
@@ -297,17 +298,14 @@ body {
 .avatar {
 	margin-top: 46px;
 	margin-bottom: 1.5vh;
-	width: 90%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.photo {
 	width: 204px;
 	height: 204px;
-	background: #d9d9d9;
-	border-radius: 50%;
+}
+.avatar .photo {
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .feedback {
@@ -329,6 +327,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	user-select: text;
 	align-items: center;
 }
 
@@ -352,4 +351,16 @@ body {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+}
+.link {
+	display: block;
+	width: 100%;
+}
+
+::-webkit-scrollbar {
+	display: none;
+	-webkit-appearance: none;
+	background: transparent;
+	width: 0px;
+	height: 0px;
 }

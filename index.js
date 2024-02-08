@@ -74,6 +74,6 @@ const tg = window.Telegram?.WebApp
 if (tg) {
 	tg.ready()
 	tg.expand()
-	tg.setBackgroundColor = "#efeef3"
+	tg.setBackgroundColor = "#fff"
 	tg.enableClosingConfirmation()
 }
