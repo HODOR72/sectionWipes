@@ -1,569 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wame</title>
-    <link rel="stylesheet" href="./styles.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
-  </head>
-  <body>
-    <div id="pinContainer">
-      <section class="panel blue">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <div class="content">
-          <p class="text">
-            <span class="bold">Wame.tools</span> — инструмент <br />
-            для создания приложений <br />
-            c возможностями сайта прямо в Telegram
-          </p>
-          <div class="row">
-            <img
-              class="phone-screen"
-              src="./public/img/FirstScreen.png"
-              alt="screen"
-            />
-            <img
-              class="phone-screen"
-              src="./public/img/SecondScreen.png"
-              alt="screen"
-            />
-          </div>
-          <div class="column mt-34">
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Выгоднее, чем создание сайта или мобильного приложения</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Широкий функционал на базе  популярного мессенджера</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Встроенная сквозная аналитика</p>
-            </div>
-          </div>
-        </div>
-      </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wame</title>
+		<link rel="stylesheet" href="./styles.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<script src="https://telegram.org/js/telegram-web-app.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+	</head>
+	<body>
+		<div id="pinContainer">
+			<section class="panel blue">
+				<div className="wrapper">
+					<div class="heading">
+						<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+					</div>
+					<div class="content">
+						<p class="text">
+							<span class="bold">Wame.tools</span> — инструмент <br />
+							для создания приложений <br />
+							c возможностями сайта прямо в Telegram
+						</p>
+						<div class="row">
+							<img
+								class="phone-screen"
+								src="./public/img/FirstScreen.png"
+								alt="screen"
+							/>
+							<img
+								class="phone-screen"
+								src="./public/img/SecondScreen.png"
+								alt="screen"
+							/>
+						</div>
+						<div class="column mt-34">
+							<div class="enhance">
+								<img src="./public/img/Check.svg" alt="check" class="check" />
+								<p>Выгоднее, чем создание сайта или мобильного приложения</p>
+							</div>
+							<div class="enhance">
+								<img src="./public/img/Check.svg" alt="check" class="check" />
+								<p>Широкий функционал на базе  популярного мессенджера</p>
+							</div>
+							<div class="enhance">
+								<img src="./public/img/Check.svg" alt="check" class="check" />
+								<p>Встроенная сквозная аналитика</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section class="panel turqoise">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <div class="content">
-          <p class="text">
-            <span class="bold">С Wame.tools можно</span>
-          </p>
-          <div class="column">
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>
-                Иметь полноценный магазин с возможностью оплаты товаров и услуг
-                в Telegram
-              </p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Синхронизировать данные по API с бэком ваших систем</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Выстраивать доставку и делать трекинг</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Предлагать промокоды и проводить маркетинговые акции</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>
-                Собирать и анализировать данные пользователей в удобном личном
-                кабинете
-              </p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Реализовывать игровые механики, NPC опросы</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Общаться с пользователем от лица бренда</p>
-            </div>
-          </div>
-        </div>
-      </section>
+			<section class="panel turqoise">
+				<div class="heading">
+					<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+				</div>
+				<div class="content">
+					<p class="text">
+						<span class="bold">С Wame.tools можно</span>
+					</p>
+					<div class="column">
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>
+								Иметь полноценный магазин с возможностью оплаты товаров и услуг
+								в Telegram
+							</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Синхронизировать данные по API с бэком ваших систем</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Выстраивать доставку и делать трекинг</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Предлагать промокоды и проводить маркетинговые акции</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>
+								Собирать и анализировать данные пользователей в удобном личном
+								кабинете
+							</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Реализовывать игровые механики, NPC опросы</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Общаться с пользователем от лица бренда</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section class="panel green">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <p class="bold">Альтернативы</p>
-              <div class="card dir-col p-16">
-                <p class="bold mb-16">БОТ В TELEGRAM</p>
-                <div class="column">
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Простота реализации</p>
-                  </div>
+			<section class="panel green">
+				<div class="heading">
+					<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+				</div>
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<p class="bold">Альтернативы</p>
+							<div class="card dir-col p-16">
+								<p class="bold mb-8">БОТ В TELEGRAM</p>
+								<div class="column">
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Простота реализации</p>
+									</div>
 
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Большое количество исполнителей</p>
-                  </div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Большое количество исполнителей</p>
+									</div>
 
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>Отсутствие дизайна</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>Сложно масштабировать</p>
-                  </div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>Отсутствие дизайна</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>Сложно масштабировать</p>
+									</div>
 
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>Линейная модель ответа</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card dir-col p-16">
-                <p class="bold mb-16">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
-                <div class="column">
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Удобный интерфейс</p>
-                  </div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>Линейная модель ответа</p>
+									</div>
+								</div>
+							</div>
+							<p class="center">Листай дальше -></p>
+						</div>
+						<div class="swiper-slide">
+							<div class="card dir-col p-16">
+								<p class="bold mb-8">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+								<div class="column">
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Удобный интерфейс</p>
+									</div>
 
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Инструментарий для увеличения лояльности и LTV</p>
-                  </div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Инструментарий для увеличения лояльности и LTV</p>
+									</div>
 
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>Долгая разработка</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>Высокая стоимость доработки</p>
-                  </div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>Долгая разработка</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>Высокая стоимость доработки</p>
+									</div>
 
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>Сложное редактирование</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>
-                      Новые функции доступны только после обновления приложения
-                    </p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>Работают только на IOS и Android</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Cancel.svg"
-                      class="check"
-                    />
-                    <p>
-                       Зависят от политики магазина приложений и могут быть
-                      удалены
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <p class="center">Листай дальше -></p>
-            </div>
-            <div class="swiper-slide">
-              <div class="card dir-col p-16 mt-37 approve">
-                <p class="bold mb-16">ПРИЛОЖЕНИЕ ОТ WAME.TOOLS</p>
-                <div class="column">
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Любой дизайн и наполнение</p>
-                  </div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>Сложное редактирование</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>
+											Новые функции доступны только после обновления приложения
+										</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>Работают только на IOS и Android</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Cancel.svg"
+											class="check"
+										/>
+										<p>
+											 Зависят от политики магазина приложений и могут быть
+											удалены
+										</p>
+									</div>
+								</div>
+							</div>
+							<p class="center">Листай дальше -></p>
+						</div>
+						<div class="swiper-slide">
+							<div class="card dir-col p-16 approve">
+								<p class="bold mb-8">ПРИЛОЖЕНИЕ ОТ WAME.TOOLS</p>
+								<div class="column">
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Любой дизайн и наполнение</p>
+									</div>
 
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Соблюдение гайдлайнов бренда</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Игровые и CRM-механики</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Простое создание и масштабирование</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Работа на всех устройствах, поддерживающих телеграм</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Мгновенное внедрение новых функций</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Поддержка API</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Сбор данных для аналитики</p>
-                  </div>
-                  <div class="row">
-                    <img
-                      alt="approve"
-                      src="./public/img/Approve.svg"
-                      class="check"
-                    />
-                    <p>Клиентская поддержка в привычном  мессенджере</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Соблюдение гайдлайнов бренда</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Игровые и CRM-механики</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Простое создание и масштабирование</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Работа на всех устройствах, поддерживающих телеграм</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Мгновенное внедрение новых функций</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Поддержка API</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Сбор данных для аналитики</p>
+									</div>
+									<div class="row">
+										<img
+											alt="approve"
+											src="./public/img/Approve.svg"
+											class="check"
+										/>
+										<p>Клиентская поддержка в привычном  мессенджере</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section class="panel bordeaux">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <div class="content">
-          <p class="text">
-            <span class="bold">Кастомное приложение под ваши задачи</span>
-          </p>
-          <p class="text">
-            С удобным, брендированным интерфейсом и необходимым функционалом, в
-            том числе push-нотификацией
-          </p>
-          <div class="card">
-            от 200 000 рублей <br />
-            от 2 недель
-          </div>
-          <div class="row">
-            <img
-              class="phone-screen"
-              src="./public/img/ThirdScreen.png"
-              alt="screen"
-            />
-            <img
-              class="phone-screen"
-              src="./public/img/FourthScreen.png"
-              alt="screen"
-            />
-          </div>
-          <div class="column mt-34">
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Выгоднее, чем создание сайта или мобильного приложения</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Широкий функционал на базе  популярного мессенджера</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>Встроенная сквозная аналитика</p>
-            </div>
-          </div>
-        </div>
-        <h1 class="percent">до 76%</h1>
-        <p class="text">
-          конверсия в Telegram против <br />
-          2-5% на сайте
-        </p>
-      </section>
+			<section class="panel bordeaux">
+				<div class="heading">
+					<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+				</div>
+				<div class="content">
+					<p class="text">
+						<span class="bold">Кастомное приложение под ваши задачи</span>
+					</p>
+					<p class="text">
+						С удобным, брендированным интерфейсом и необходимым функционалом, в
+						том числе push-нотификацией
+					</p>
+					<div class="card">
+						от 200 000 рублей <br />
+						от 2 недель
+					</div>
+					<div class="row">
+						<img
+							class="phone-screen"
+							src="./public/img/ThirdScreen.png"
+							alt="screen"
+						/>
+						<img
+							class="phone-screen"
+							src="./public/img/FourthScreen.png"
+							alt="screen"
+						/>
+					</div>
+				</div>
+				<h1 class="percent">до 76%</h1>
+				<p class="text">
+					конверсия в Telegram против <br />
+					2-5% на сайте
+				</p>
+			</section>
 
-      <section class="panel pink">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <div class="content">
-          <p class="text">
-            <span class="bold"
-              >Безопасная оплата внутри <br />
-              Telegram</span
-            >
-          </p>
-          <img
-            alt="payments"
-            src="./public/img/Payments.png"
-            class="payments"
-          />
-          <p class="bold-text">
-            17 показателей для аналитики <br />
-            ваших пользователей
-          </p>
-          <div class="grid-sphere mt-34">
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-            <div class="enhance">
-              <img src="./public/img/Check.svg" alt="check" class="check" />
-              <p>1</p>
-            </div>
-          </div>
-        </div>
-      </section>
+			<section class="panel pink">
+				<div class="heading">
+					<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+				</div>
+				<div class="content">
+					<p class="text">
+						<span class="bold"
+							>Безопасная оплата внутри <br />
+							Telegram</span
+						>
+					</p>
+					<div class="payments">
+						<img
+							alt="payments"
+							src="./public/img/Payments.png"
+							class="payments"
+						/>
+					</div>
 
-      <section class="panel aqua">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <div class="content">
-          <p class="bold">Для любых сфер</p>
-          <div class="grid-sphere">
-            <div class="sphere-card">
-              <h1>E-commerce</h1>
-              <img
-                alt="screen"
-                class="sphere-screen"
-                src="./public/img/SecondScreen.png"
-              />
-              <button class="button">Смотреть</button>
-            </div>
-            <div class="sphere-card">
-              <h1>Недвижимость</h1>
-              <img
-                alt="screen"
-                class="sphere-screen"
-                src="./public/img/SecondScreen.png"
-              />
-              <button class="button">Смотреть</button>
-            </div>
-            <div class="sphere-card">
-              <h1>Страхование</h1>
-              <img
-                alt="screen"
-                class="sphere-screen"
-                src="./public/img/SecondScreen.png"
-              />
-              <button class="button">Смотреть</button>
-            </div>
-            <div class="sphere-card">
-              <h1>Спецпроекты</h1>
-              <img
-                alt="screen"
-                class="sphere-screen"
-                src="./public/img/SecondScreen.png"
-              />
-              <button class="button">Смотреть</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="panel brown">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <p class="bold mb-21">Уже решили задачи для</p>
-        <div class="column">
-          <div class="mb-18">
-            <p class="name">
-              Альфастрахование <br />
-              конверсия 13,8%
-            </p>
-            <p class="desc">для сравнения на сайте — 3,7%</p>
-          </div>
-          <div class="row between">
-            <img
-              alt="screen"
-              src="./public/img/SecondScreen.png"
-              class="task-screen"
-            />
-            <img
-              alt="screen"
-              src="./public/img/SecondScreen.png"
-              class="task-screen"
-            />
-            <img
-              alt="screen"
-              src="./public/img/SecondScreen.png"
-              class="task-screen"
-            />
-          </div>
-        </div>
-        <div class="column mt-40">
-          <div class="mb-18">
-            <p class="name">X5 52%</p>
-            <p class="desc">
-              пользователей, зашедших в приложение, <br />
-              оставили контактные данные и забрали промокод
-            </p>
-          </div>
-          <div class="row between">
-            <img
-              alt="screen"
-              src="./public/img/SecondScreen.png"
-              class="task-screen"
-            />
-            <img
-              alt="screen"
-              src="./public/img/SecondScreen.png"
-              class="task-screen"
-            />
-            <img
-              alt="screen"
-              src="./public/img/SecondScreen.png"
-              class="task-screen"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="panel bisque">
-        <div class="heading">
-          <img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
-        </div>
-        <div class="end">
-          <p class="bold">
-            Начните продавать в <br />
-            Telegram свои товары <br />
-            и услуги
-          </p>
-          <div class="content-center">
-            <div class="avatar">
-              <div class="photo"></div>
-            </div>
-            <button class="feedback">Написать мне</button>
-          </div>
-          <div class="contacts">
-            <p class="contact">+7 903 779-39-39</p>
-            <p class="contact">ama@wame.tools</p>
-          </div>
-        </div>
-      </section>
-    </div>
+					<p class="bold-text">
+						17 показателей для аналитики <br />
+						ваших пользователей
+					</p>
+					<div class="grid-sphere mt-34">
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Имя</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Фамилия</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Язык</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Фото</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Дата регистрации</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Последний вход</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Номер телефона</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Город</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Почта</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Адрес доставки</p>
+						</div>
+						<div class="enhance">
+							<img src="./public/img/Check.svg" alt="check" class="check" />
+							<p>Яндекс.Метрика/Google Analytics, а также heatmap треккеры</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        simulateTouch: true,
-      });
-    </script>
-  </body>
+			<section class="panel aqua">
+				<div class="heading">
+					<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+				</div>
+				<div class="content">
+					<p class="bold">Для любых сфер</p>
+					<div class="grid-sphere">
+						<a
+							href="https://t.me/wametools_bot"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div class="sphere-card">
+								<h1>E-commerce</h1>
+								<img
+									alt="screen"
+									class="sphere-screen"
+									src="./public/img/SecondScreen.png"
+								/>
+								<button class="button">Смотреть</button>
+							</div>
+						</a>
+						<a
+							href="https://t.me/AlfaStrahCount_bot"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div class="sphere-card">
+								<h1>Недвижимость</h1>
+								<img
+									alt="screen"
+									class="sphere-screen"
+									src="./public/img/SecondScreen.png"
+								/>
+								<button class="button">Смотреть</button>
+							</div> </a
+						><a
+							href="https://t.me/sberdevices_lightingbot"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div class="sphere-card">
+								<h1>Страхование</h1>
+								<img
+									alt="screen"
+									class="sphere-screen"
+									src="./public/img/SecondScreen.png"
+								/>
+								<button class="button">Смотреть</button>
+							</div>
+						</a>
+						<a
+							href="https://t.me/stroymydom_bot"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div class="sphere-card">
+								<h1>Спецпроекты</h1>
+								<img
+									alt="screen"
+									class="sphere-screen"
+									src="./public/img/SecondScreen.png"
+								/>
+								<button class="button">Смотреть</button>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="panel brown">
+				<div class="heading">
+					<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+				</div>
+				<p class="bold mb-21">Уже решили задачи для</p>
+				<div class="column">
+					<div class="mb-18">
+						<p class="name">
+							Альфастрахование <br />
+							конверсия 13,8%
+						</p>
+						<p class="desc">для сравнения на сайте — 3,7%</p>
+					</div>
+					<div class="row between task-screen-wrapper">
+						<img
+							alt="screen"
+							src="./public/img/SecondScreen.png"
+							class="task-screen"
+						/>
+						<img
+							alt="screen"
+							src="./public/img/SecondScreen.png"
+							class="task-screen"
+						/>
+						<img
+							alt="screen"
+							src="./public/img/SecondScreen.png"
+							class="task-screen"
+						/>
+					</div>
+				</div>
+				<div class="column mt-40">
+					<div class="mb-18">
+						<p class="name">X5 52%</p>
+						<p class="desc">
+							пользователей, зашедших в приложение, <br />
+							оставили контактные данные и забрали промокод
+						</p>
+					</div>
+					<div class="row between task-screen-wrapper">
+						<img
+							alt="screen"
+							src="./public/img/SecondScreen.png"
+							class="task-screen"
+						/>
+						<img
+							alt="screen"
+							src="./public/img/SecondScreen.png"
+							class="task-screen"
+						/>
+						<img
+							alt="screen"
+							src="./public/img/SecondScreen.png"
+							class="task-screen"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="panel bisque">
+				<div class="heading">
+					<img alt="logo" class="wame-logo" src="./public/img/WameLogo.svg" />
+				</div>
+				<div class="end">
+					<p class="bold">
+						Начните продавать в <br />
+						Telegram свои товары <br />
+						и услуги
+					</p>
+					<div class="content-center">
+						<div class="avatar">
+							<div class="photo"></div>
+						</div>
+						<button class="feedback">Написать мне</button>
+					</div>
+					<div class="contacts">
+						<p class="contact">+7 903 779-39-39</p>
+						<p class="contact">ama@wame.tools</p>
+					</div>
+				</div>
+			</section>
+		</div>
 
-  <script src="./index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".mySwiper", {
+				simulateTouch: true,
+			})
+		</script>
+	</body>
+
+	<script src="./index.js"></script>
 </html>
