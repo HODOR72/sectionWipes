@@ -64,7 +64,7 @@ const contentBlocks = document.querySelectorAll(".panel")
 const scene = new ScrollMagic.Scene({
 	triggerElement: "#pinContainer",
 	triggerHook: "onLeave",
-	duration: "500%",
+	duration: "600%",
 })
 	.setPin("#pinContainer")
 	.setTween(wipeAnimation)
