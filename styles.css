@@ -186,7 +186,7 @@ body {
 
 .payments {
 	margin-bottom: 1.5vh;
-	width: 100%;
+	width: calc(100% - 2vh);
 }
 .payments img {
 	width: 100%;
@@ -240,6 +240,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1px;
+	padding-right: 1vh;
 }
 
 .sphere-card {
